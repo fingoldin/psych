@@ -1,5 +1,4 @@
 .consent-main {
-        border: 1px solid green;
         padding: 10px 30px;
 }
 
@@ -15,9 +14,9 @@
 .consent-text p {
 	margin: 10px 0px;
         padding: 5px 10px;
-        height: 350px;
         overflow: auto;
         text-align: left;
+	max-height: 80vh;
 }
 
 #confirm {
