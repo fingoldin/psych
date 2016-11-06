@@ -1,0 +1,103 @@
+.bar-graph-main, .bar-graph-graph, .bar-graph-columns {
+	width: 100%;
+	height: 100%;
+}
+
+.bar-graph-main {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+ 	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.bar-graph-columns {
+	height: 90%;
+}
+
+.bar-graph-column-wrap, .bar-graph-label {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.bar-graph-column, .bar-graph-label {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.bar-graph-column {
+	margin-right: 1px;
+	min-height: 3%;
+	background-color: #008CBA;
+}
+
+.bar-graph-column:hover {
+	cursor: pointer
+}
+
+.bar-graph-column-wrap:last-child .bar-graph-column{
+	margin-right: 0px;
+}
+
+/*.bar-graph-labels {
+	height: 10%;
+}*/
+
+.bar-graph-label {
+	padding: 5px;
+	font-size: 13px;
+	line-height: 13px;
+	color: #999;
+	height: auto;
+}
+
+.bar-graph-label p {
+	display: block;
+}
+
+.bar-graph-label input {
+	width: 100%;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 4px;
+}
+
+.bar-graph-slider {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #4CAF50;
+	opacity: 0;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+.bar-graph-column-wrap:hover .bar-graph-slider {
+	opacity: 1;
+}
+
+.bar-graph-slider:hover {
+	background-color: #3B9E39;
+	cursor: pointer;
+}
+
+.bar-graph-slider:active {
+	background-color: #2A8D28;
+	opacity: 1;
+	cursor: pointer;
+}
